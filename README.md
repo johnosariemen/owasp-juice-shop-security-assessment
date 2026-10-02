@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A hands-on web application security assessment of OWASP Juice Shop performed in a controlled local lab environment.
+A hands on web application security assessment of OWASP Juice Shop performed in a controlled local lab environment.
 
 The assessment focused on reconnaissance, enumeration, attack-surface identification, vulnerability testing, source-code review, evidence collection, and security remediation recommendations.
 

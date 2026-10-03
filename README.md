@@ -2,78 +2,78 @@
 
 ## Project Overview
 
-A hands on web application security assessment of OWASP Juice Shop performed in a controlled local lab environment.
+A hands on web application security assessment of **OWASP Juice Shop** performed in a controlled local laboratory environment.
 
-The assessment focused on reconnaissance, enumeration, attack-surface identification, vulnerability testing, source-code review, evidence collection, and security remediation recommendations.
+The assessment focused on reconnaissance, API enumeration, vulnerability testing, authentication and authorization testing, source-code review, evidence collection, and security remediation recommendations.
 
 ## Objectives
 
-- Perform reconnaissance and information gathering
-- Identify the application's attack surface
-- Test selected web application security controls
-- Review relevant application source code
-- Collect evidence of security findings
-- Assess the potential security impact of identified issues
-- Provide practical remediation recommendations
+* Perform reconnaissance and information gathering
+* Identify the application's attack surface
+* Test selected web application security controls
+* Review relevant application source code
+* Collect evidence of security findings
+* Assess the potential impact of identified issues
+* Provide practical remediation recommendations
 
 ## Testing Environment
 
-- **Target:** OWASP Juice Shop
-- **Environment:** Local Docker lab
-- **Operating System:** Kali Linux
-- **Application URL:** `http://127.0.0.1:3000`
-- **Assessment Type:** Authorized security assessment
+* **Target:** OWASP Juice Shop 20.2.0
+* **Environment:** Local Docker laboratory
+* **Operating System:** Kali Linux
+* **Browser:** Firefox
+* **Assessment Type:** Authorized security assessment
 
 ## Tools Used
 
-- WhatWeb
-- cURL
-- Docker
-- Kali Linux
-- Browser Developer Tools
-- Source-code review
-- Linux command-line tools
+* Kali Linux
+* Docker
+* WhatWeb
+* cURL
+* Firefox Developer Tools
+* Node.js / JavaScript utilities
+* Linux command-line tools
+* Source-code review
 
 ## Assessment Activities
 
 The assessment included:
 
-- HTTP response and security header analysis
-- Application reconnaissance
-- Endpoint enumeration
-- Administrative endpoint review
-- Application configuration review
-- Source-code analysis
-- SSRF-related testing
-- Authentication and session-related observations
-- Evidence collection and documentation
+* HTTP response and security header analysis
+* Application reconnaissance
+* API endpoint enumeration
+* Authentication and authorization testing
+* SQL injection testing
+* SSRF testing
+* BOLA/IDOR testing
+* Source-code analysis
+* Evidence collection and documentation
 
-## Key Findings
+## Confirmed Findings
 
-The assessment identified security-relevant observations involving:
+The assessment confirmed six security findings:
 
-- Application information exposure
-- Administrative configuration exposure
-- Server-side request behavior
-- Authentication and session handling
-- Application source-code and endpoint analysis
+1. **SQL Injection — Product Search**
+2. **SQL Injection — Login**
+3. **Sensitive Information Exposure in JWT**
+4. **Broken Function-Level Authorization & Excessive User Data Exposure**
+5. **Server-Side Request Forgery (SSRF)**
+6. **Broken Object Level Authorization (BOLA/IDOR)**
 
-Detailed technical findings, evidence, impact, and remediation recommendations are documented in the full assessment report.
+Detailed technical findings, evidence, impact, classifications, and remediation recommendations are documented in the full assessment report.
 
 ## Evidence
 
-Screenshots, command outputs, and other supporting evidence were collected during the assessment and are included in the project documentation.
+Supporting screenshots and evidence from the assessment are organized in the `screenshots/` directory.
 
-## Remediation
-
-Recommendations are provided for each identified security issue, including appropriate access controls, input validation, secure configuration, authentication controls, and reduction of unnecessary information exposure.
+Sensitive information such as passwords, tokens, cookies, JWTs, and other authentication secrets have been excluded or redacted.
 
 ## Full Report
 
-The complete security assessment report is available here:
-
-[OWASP Juice Shop Security Assessment Report](./OWASP-Juice-Shop-Security-Assessment.pdf)
+[**View the OWASP Juice Shop Security Assessment Report**](./OWASP-Juice-Shop-Security-Assessment.pdf)
 
 ## Disclaimer
 
-This assessment was performed against a deliberately vulnerable application in a controlled local lab environment for educational and cybersecurity training purposes.
+This assessment was performed against a deliberately vulnerable application in a controlled local laboratory environment for educational and cybersecurity training purposes.
+
+No production systems or unrelated external systems were targeted.

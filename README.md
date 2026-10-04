@@ -64,9 +64,13 @@ Detailed technical findings, evidence, impact, classifications, and remediation 
 
 ## Evidence
 
-Supporting screenshots and evidence from the assessment are organized in the `screenshots/` directory.
+Supporting screenshots and evidence are organized by assessment area:
 
-Sensitive information such as passwords, tokens, cookies, JWTs, and other authentication secrets have been excluded or redacted.
+- [Reconnaissance](./screenshots/reconnaissance/)
+- [SQL Injection](./screenshots/sql-injection/)
+- [Authorization](./screenshots/authorization/)
+- [SSRF](./screenshots/ssrf/)
+- [BOLA/IDOR](./screenshots/bola-idor/)
 
 ## Full Report
 
